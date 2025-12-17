@@ -48,7 +48,41 @@ A powerful Named Entity Recognition (NER) system built with Flask and spaCy. It 
 
 2. **Access**: Open [http://localhost:5000](http://localhost:5000)
 
-## 💻 Command Line Usage
+## � Standalone Executable (Windows Only)
+
+For users who prefer not to install Python or run commands, we've created a standalone executable:
+
+### Download & Run
+1. **Download**: Get the `Entity Recognition System.exe` file
+2. **Run**: Double-click the .exe file (no installation required)
+3. **Wait**: First run downloads required models (may take a few minutes)
+4. **Use**: Browser opens automatically at `http://localhost:5000`
+
+### Building the Executable
+If you want to create your own executable:
+
+1. **Install PyInstaller**:
+    ```bash
+    pip install pyinstaller
+    ```
+
+2. **Run the build script**:
+    ```bash
+    # On Windows
+    build_exe.bat
+    ```
+
+3. **Find the executable**:
+    - Location: `dist/Entity Recognition System.exe`
+    - Size: ~200-500MB (includes Python runtime and models)
+
+### Features
+- ✅ **Zero Dependencies**: Works on any Windows computer
+- ✅ **Auto-Setup**: Downloads models automatically on first run
+- ✅ **Self-Contained**: Includes all required libraries
+- ✅ **Browser Integration**: Opens web interface automatically
+
+## �💻 Command Line Usage
 
 ### Prerequisites
 Make sure you have:
@@ -71,7 +105,7 @@ Make sure you have:
     # On macOS/Linux
     source venv/bin/activate
     ```
-    
+
 
 3. **Start the Flask application**:
     ```bash
